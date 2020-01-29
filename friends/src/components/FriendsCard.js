@@ -3,13 +3,13 @@ import {Link} from 'react-router-dom';
 
 const FriendsCard = (props) => {
     const { friend, deleteFriend } = props;
-    console.log(friend);
+    //console.log(friend);
     return (
-        <div style={{border: '2px solid yellow', borderRadius: '20%'}}>
+        <div style={{border: '2px solid yellow', borderRadius: '20%', background:'lightblue'}}>
             <h3>{friend.name}</h3>
             <p>Age: {friend.age}</p>
             <p>Email: {friend.email}</p>
-            <button><Link to={`/${edit-friend}`}>Edit</Link></button>
+            <button><Link to={`/edit-friend/${friend.id}`}>Edit</Link></button>
             <button onClick={() => deleteFriend(friend.id)}>Delete</button>
         </div>
     )
