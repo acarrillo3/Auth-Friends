@@ -19,7 +19,7 @@ const FriendsList = () => {
     return (
         <div>
             <h1>Friends List</h1>
-            <AddFriend />
+            {/* <AddFriend /> */}
             {friends.map(friend => (
                 <FriendsCard friend={friend} key={friend.id} />
             ))}
