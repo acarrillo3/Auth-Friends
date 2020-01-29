@@ -42,6 +42,7 @@ const Login = props => {
             name="username"
             placeholder="Enter username"
             onChange={handleChange}
+            value={userCreds.username}
           />
         </label>
         <label htmlFor="password">
@@ -51,6 +52,7 @@ const Login = props => {
             name="password"
             placeholder="Enter password"
             onChange={handleChange}
+            value={userCreds.password}
           />
         </label>
         <button>Submit</button>
