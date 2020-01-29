@@ -44,7 +44,7 @@ const Login = props => {
             onChange={handleChange}
             value={userCreds.username}
           />
-        </label>
+        </label><br/>
         <label htmlFor="password">
           Password:{" "}
           <input
@@ -54,7 +54,7 @@ const Login = props => {
             onChange={handleChange}
             value={userCreds.password}
           />
-        </label>
+        </label><br/>
         <button>Submit</button>
       </form>
     </div>

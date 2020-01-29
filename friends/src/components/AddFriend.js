@@ -41,7 +41,8 @@ const AddFriend = () => {
   };
 
   return (
-    <div style={{background: "skyblue"}}>
+    <div style={{background: "skyblue", textAlign: "center"}}>
+        <h2>Add Friend</h2>
       <form onSubmit={e => addNewFriend(e)}>
         <label htmlFor="name">
           Name:{" "}
@@ -52,7 +53,7 @@ const AddFriend = () => {
             onChange={handleChange}
             value={newFriend.name}
           />
-        </label>
+        </label><br/>
         <label htmlFor="age">
           Age:{" "}
           <input
@@ -62,7 +63,7 @@ const AddFriend = () => {
             onChange={handleAgeChange}
             value={newFriend.age}
           />
-        </label>
+        </label><br/>
         <label htmlFor="email">
           Email:{" "}
           <input
@@ -72,7 +73,7 @@ const AddFriend = () => {
             onChange={handleChange}
             value={newFriend.email}
           />
-        </label>
+        </label><br/>
         <button>Submit</button>
       </form>
       {friendAdded ? (<p>Friend has been added</p>) : ''}
