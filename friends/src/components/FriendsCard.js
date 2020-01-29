@@ -9,7 +9,7 @@ const FriendsCard = (props) => {
             <h3>{friend.name}</h3>
             <p>Age: {friend.age}</p>
             <p>Email: {friend.email}</p>
-            <button><Link to="/edit-friend">Edit</Link></button>
+            <button><Link to={`/${edit-friend}`}>Edit</Link></button>
             <button onClick={() => deleteFriend(friend.id)}>Delete</button>
         </div>
     )
